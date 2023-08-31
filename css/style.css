@@ -6,7 +6,7 @@
     --background-color: #FFFFFF;
     --modal-background-color: #FCFCFC;
     --icon-color: #4D5AE5;
-    --icon-hover-color: #404BBF;
+    --icon-hover-color: #31D0AA;
     --dark-background-color: #2E2F42;
     --green-success-color: #31D0AA;
     --body-text-color: #434455;
@@ -22,6 +22,7 @@
     --button-border: #E7E9FC;
     --button-text-color: #4D5AE5;
     --grey: rgba(46, 47, 66, 0.70);
+    --button-hover: #404BBF;
 }
 
 
@@ -50,12 +51,12 @@ ul {
 
 .nav-box a:hover {
     text-decoration: none;
-    color: var(--icon-hover-color);
+    color: var(--button-hover);
 }
 
 .nav-box a:focus {
     text-decoration: none;
-    color: var(--icon-hover-color);
+    color: var(--button-hover);
 }
 
 .main-theme-box {
@@ -350,11 +351,11 @@ footer a {
 }
 
 .main-button:hover {
-    background-color: var(--icon-hover-color);
+    background-color: var(--button-hover);
 }
 
 .main-button:focus {
-    background-color: var(--icon-hover-color);
+    background-color: var(--button-hover);
 }
 
 .cardbox-border {
@@ -417,7 +418,7 @@ footer a {
 }
 
 .portfolio-button-list button:hover {
-    background: var(--icon-hover-color);
+    background: var(--button-hover);
     color: var(--button-hover-text-color);
 }
 
@@ -549,7 +550,7 @@ footer a {
     position: absolute;
     top: 68px;
     height: 4px;
-    background-color: var(--icon-hover-color);
+    background-color: var(--button-hover);
     width: 48px;
     border-radius: 2px;
 }
@@ -560,8 +561,19 @@ footer a {
     position: absolute;
     top: 68px;
     height: 4px;
-    background-color: var(--icon-hover-color);
+    background-color: var(--button-hover);
     width: 66px;
+    border-radius: 2px;
+}
+
+.contacts-pseudo::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 68px;
+    height: 4px;
+    background-color: var(--button-hover);
+    width: 67px;
     border-radius: 2px;
 }
 
@@ -587,8 +599,8 @@ footer a {
 }
 
 .customers-list a:hover {
-    border-color: var(--icon-hover-color);
-    fill: var(--icon-hover-color);
+    border-color: var(--button-hover);
+    fill: var(--button-hover);
 }
 
 .customers-tittle h2 {
@@ -660,7 +672,7 @@ footer a {
 }
 
 .nletter-button button:hover {
-    background-color: var(--icon-hover-color);
+    background-color: var(--button-hover);
 }
 
 .nletter-button span {
@@ -808,6 +820,7 @@ footer a {
     padding: 6px;
     fill: var(--dark-background-color);
     background-color: var(--button-border);
+    margin-right: 24px;
 }
 
 .xbutton:active {
