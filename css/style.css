@@ -381,7 +381,7 @@ footer a {
     padding-inline-start: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
-    row-gap: 32px;
+    row-gap: 48px;
     margin-bottom: 120px;
 }
 
@@ -519,7 +519,9 @@ footer a {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-box:hover .overlay {
+/* \/  .overlay-box:hover .overlay <--- było źle, wysuwało się tylko na fotce */
+
+.portfolio-cardbox li:hover .overlay {
     transform: translateY(-100%);
     overflow: visible;
     transition-duration: 250ms;
