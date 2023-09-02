@@ -839,13 +839,12 @@ footer a {
     outline: none;
 }
 
-/*
+
 .is-hidden {
     pointer-events: none;
     visibility: visible;
     opacity: 0;
 }
-*/
 
 .modal {
     position: absolute;
@@ -931,10 +930,6 @@ input:not([type="checbox"]):focus {
 
 .email-icon {
     margin-top: 12px;
-}
-
-.input-wrapper .svg {
-    fill: orange;
 }
 
 .phone-icon {
