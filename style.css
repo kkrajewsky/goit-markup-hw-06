@@ -866,13 +866,13 @@ footer a {
     outline: none;
 }
 
-/*
+
 .is-hidden {
     pointer-events: none;
     visibility: visible;
     opacity: 0;
 }
-*/
+
 .modal {
     position: absolute;
     width: 408px;
