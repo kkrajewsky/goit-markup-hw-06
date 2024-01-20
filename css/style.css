@@ -941,13 +941,10 @@ input label:focus {
 }
 */
 
-input:not([type="checbox"]) {
-    border: none;
-}
 
-input:not([type="checbox"]):focus {
-    outline: none;
-}
+
+
+
 
 .input-wrapper {
     border: 1px solid var(--modal-border-color);
@@ -1031,34 +1028,46 @@ input:not([type="checbox"]):focus {
     margin: 24px auto 24px;
 }
 
-input[type="checkbox"] {
-    appearance: none;
-}
-
-.fake-checkbox {
-    opacity: 0;
-}
-
-input:checked+.fake-checkbox {
-    opacity: 1;
-}
 
 input[id="nletter-email"] {
     border: 1px solid var(--background-color);
 }
 
+
+.fake-checkbox {
+    visibility: hidden;
+    
+
+}
+
 .checkbox-check {
-    border: 1px solid var(--modal-border-color);
-    border-radius: 4px;
-    padding: 3px;
     fill: var(--button-hover-text-color);
     background-color: var(--button-text-color);
+    padding: 3px;
     display: inline;
     align-items: center;
+    border: 1px solid var(--modal-border-color);
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
 }
 
 .check-position {
     display: flex;
     gap: 8px;
     align-items: center;
+}
+
+.checkbox-is {
+    visibility: visible;
+}
+
+input:not([type="checbox"]):focus {
+    outline: none;
+}
+
+.checkbox-is:checked +
+    .fake-checkbox {
+        visibility: visible;
+    
 }
