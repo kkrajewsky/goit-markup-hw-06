@@ -1069,6 +1069,7 @@ input:not([type="checbox"]):focus {
     outline: none;
 }
 
+/*
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -1080,10 +1081,16 @@ input:not([type="checbox"]):focus {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+}*/
 
-.checkbox-is:checked + .fake-checkbox .checkbox-check {
+.checkbox-is:checked+.fake-checkbox .checkbox-check {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
+}
+
+.checkbox-is {
+    position: absolute;
+    width: 16px;
+    height: 16px;
 }
