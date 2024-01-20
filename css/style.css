@@ -1033,39 +1033,41 @@ input[id="nletter-email"] {
     border: 1px solid var(--background-color);
 }
 
-
-.fake-checkbox {
-    visibility: hidden;
-    
-
-}
-
 .checkbox-check {
-    fill: var(--button-hover-text-color);
-    background-color: var(--button-text-color);
     padding: 3px;
-    display: inline;
-    align-items: center;
-    border: 1px solid var(--modal-border-color);
-    border-radius: 4px;
     width: 16px;
     height: 16px;
 }
 
 .check-position {
+    position: relative;
     display: flex;
-    gap: 8px;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
 }
 
-.checkbox-is {
-    visibility: visible;
+.fake-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    fill: transparent;
+    transition-property: background-color, border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 input:not([type="checbox"]):focus {
     outline: none;
 }
-
 
 .visually-hidden {
     position: absolute;
